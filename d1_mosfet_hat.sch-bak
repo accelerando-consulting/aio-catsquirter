@@ -1,0 +1,200 @@
+EESchema Schematic File Version 4
+LIBS:d1_mosfet_hat-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L wemos:WeMos_mini U1
+U 1 1 5B792A1C
+P 2250 4100
+F 0 "U1" H 2250 3363 60  0000 C CNN
+F 1 "WeMos_mini" H 2250 3469 60  0000 C CNN
+F 2 "wemos:wemos-d1-mini-connectors-only" H 2800 3400 60  0001 C CNN
+F 3 "" H 2250 3469 60  0000 C CNN
+	1    2250 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5B7A3A59
+P 3900 5000
+F 0 "#PWR01" H 3900 4750 50  0001 C CNN
+F 1 "GND" H 3905 4827 50  0000 C CNN
+F 2 "" H 3900 5000 50  0001 C CNN
+F 3 "" H 3900 5000 50  0001 C CNN
+	1    3900 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L d1_mosfet_hat-rescue:Q_NMOS_GDS-device Q1
+U 1 1 5D74E2AF
+P 4150 3950
+F 0 "Q1" H 3950 4250 50  0000 L CNN
+F 1 "LL014N" H 3950 4150 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 4350 4050 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5D74E450
+P 4150 5050
+F 0 "J2" V 4050 5050 50  0000 C CNN
+F 1 "Batt" V 4050 4900 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_S02B-XH-A_02x2.50mm_Angled" H 4150 5050 50  0001 C CNN
+F 3 "~" H 4150 5050 50  0001 C CNN
+	1    4150 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J3
+U 1 1 5D74E57B
+P 5050 5050
+F 0 "J3" V 4950 5400 50  0000 R CNN
+F 1 "Batt Out" V 4950 5250 50  0000 R CNN
+F 2 "Connectors_JST:JST_XH_S02B-XH-A_02x2.50mm_Angled" H 5050 5050 50  0001 C CNN
+F 3 "~" H 5050 5050 50  0001 C CNN
+	1    5050 5050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 5D74E6E7
+P 5050 2650
+F 0 "J1" H 5110 2690 50  0000 L CNN
+F 1 "Pump" V 5201 2690 50  0000 L CNN
+F 2 "Connectors_JST:JST_XH_S02B-XH-A_02x2.50mm_Angled" H 5050 2650 50  0001 C CNN
+F 3 "~" H 5050 2650 50  0001 C CNN
+	1    5050 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 4850 4250 4700
+Wire Wire Line
+	4250 4700 5150 4700
+Wire Wire Line
+	5150 4700 5150 4850
+Wire Wire Line
+	5050 4850 5050 4600
+Wire Wire Line
+	5050 4600 4150 4600
+Wire Wire Line
+	4150 4600 4150 4850
+Wire Wire Line
+	5050 4600 5050 2850
+Connection ~ 5050 4600
+Wire Wire Line
+	4950 2850 4950 3500
+Wire Wire Line
+	4950 3500 4250 3500
+Wire Wire Line
+	4250 3500 4250 3750
+Connection ~ 4250 4700
+Wire Wire Line
+	3900 4350 3900 4700
+$Comp
+L d1_mosfet_hat-rescue:R-device R3
+U 1 1 5D751BFC
+P 3900 4150
+F 0 "R3" H 3970 4196 50  0000 L CNN
+F 1 "10k" H 3970 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3830 4150 50  0001 C CNN
+F 3 "~" H 3900 4150 50  0001 C CNN
+	1    3900 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4000 3900 3950
+Wire Wire Line
+	3900 3950 3950 3950
+Wire Wire Line
+	3900 4300 3900 4350
+Connection ~ 3900 4350
+Wire Wire Line
+	3900 4700 4250 4700
+Connection ~ 3900 4700
+Wire Wire Line
+	3900 4700 3900 5000
+Text Label 4450 4600 0    50   ~ 0
+BATT+
+Text Label 4400 3500 0    50   ~ 0
+DRAIN
+Wire Wire Line
+	2750 4350 3550 4350
+$Comp
+L d1_mosfet_hat-rescue:R-device R1
+U 1 1 5DB71BC0
+P 3650 3950
+F 0 "R1" V 3550 3850 50  0000 L CNN
+F 1 "1k" V 3550 4000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3580 3950 50  0001 C CNN
+F 3 "~" H 3650 3950 50  0001 C CNN
+	1    3650 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 3950 2850 3950
+Connection ~ 3900 3950
+$Comp
+L Device:LED_Small D1
+U 1 1 5DB733E6
+P 3050 4150
+F 0 "D1" H 3200 4050 50  0000 R CNN
+F 1 "LED_Small" V 3005 4082 50  0001 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" V 3050 4150 50  0001 C CNN
+F 3 "~" V 3050 4150 50  0001 C CNN
+	1    3050 4150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5DB78C00
+P 3350 4150
+F 0 "R2" V 3154 4150 50  0000 C CNN
+F 1 "220R" V 3245 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3350 4150 50  0001 C CNN
+F 3 "~" H 3350 4150 50  0001 C CNN
+	1    3350 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 3950 2850 4150
+Wire Wire Line
+	2850 4150 2950 4150
+Connection ~ 2850 3950
+Wire Wire Line
+	2850 3950 3500 3950
+Wire Wire Line
+	3150 4150 3250 4150
+Wire Wire Line
+	3450 4150 3550 4150
+Wire Wire Line
+	3550 4150 3550 4350
+Connection ~ 3550 4350
+Wire Wire Line
+	3550 4350 3900 4350
+Wire Wire Line
+	3800 3950 3900 3950
+Wire Wire Line
+	4250 4150 4250 4350
+Wire Wire Line
+	4250 4350 3900 4350
+Text Label 2800 3950 0    50   ~ 0
+D1
+Text Label 2800 4350 0    50   ~ 0
+GND
+Text Label 3850 3950 0    50   ~ 0
+GATE
+$EndSCHEMATC
