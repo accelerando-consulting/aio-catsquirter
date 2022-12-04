@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name wemos)(type Legacy)(uri /Users/chris/src/robotics/kicad-libs/wemos-d1-mini-kicad/libraries/wemos_mini.lib)(options "")(descr ""))
-  (lib (name d1_mosfet_hat-rescue)(type Legacy)(uri ${KIPRJMOD}/d1_mosfet_hat-rescue.lib)(options "")(descr ""))
+  (lib (name "wemos")(type "Legacy")(uri "/Users/chris/src/robotics/kicad-libs/wemos-d1-mini-kicad/libraries/wemos_mini.lib")(options "")(descr ""))
+  (lib (name "d1_mosfet_hat-rescue")(type "Legacy")(uri "${KIPRJMOD}/catsquirter-rescue.lib")(options "")(descr ""))
 )
