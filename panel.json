@@ -1,0 +1,61 @@
+{
+    "layout": {
+	"type": "grid",
+	"cols": 5,
+	"rows": 4,
+	"space": "2mm"
+    },
+    "tabs": {
+	"type": "fixed",
+	"width": "3mm",
+	"vcount": 2,
+	"hcount": 2,
+    },
+    "cuts": {
+	"type": "mousebites",
+	"drill": "0.5mm",
+	"spacing": "1mm",
+	"offset": "-0.25mm",
+	"prolong": "0.5mm"
+    },
+    "framing": {
+	"type": "frame",
+	"width": "3mm",
+	"space": "2mm",
+	"fillet": "1mm",
+    },
+    "page": {
+	"posx":"50mm",
+	"posy":"15mm"
+    },
+    "tooling": {
+	"type": "3hole",
+	"hoffset": "2mm",
+	"voffset": "1.5mm",
+	"coppersize": "2mm",
+	"size": "2mm"
+    },
+    "fiducials": {
+	"type": "3fid",
+	"hoffset": "8mm",
+	"voffset": "1.5mm",
+	"coppersize": "2mm",
+	"opening": "1mm"
+    },
+    "text": {
+	"type": "simple",
+	"text": "Accelerando Cat Squirter Rev 1.1 - ©2022 accelerando.io",
+	"height": "1mm",
+	"width": "1mm",
+	"anchor": "mt",
+	"voffset": "1.5mm",
+	"hjustify": "center",
+	"vjustify": "center"
+    },
+    "post": {
+	"millradius": "1mm"
+    }
+}
+    
+    
+	
